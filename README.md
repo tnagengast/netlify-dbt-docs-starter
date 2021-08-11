@@ -18,14 +18,14 @@ Try running the following commands:
 ### Deploying to Netlify
 1. Create a dbt project
 1. Push you dbt project to a GitHub repo
+1. Add `reqirements.txt` with your dbt version
+1. Add `profiles/profiles.yml`
+1. Add `netlify.toml` file that will be used to build the docs
 1. Create a Netlify account
 1. Create a `New site from Git`
 	1. Select the GitHub option to authorize
 	1. Select the repo you made for your dbt project
-	1. Set the `Build command` and `Publish directory`
-	1. Finish by select `Deploy site` (this will fail, now we fix it!)
-1. Add `reqirements.txt` with your dbt version
-1. Add `profiles/profiles.yml`
-1. Back in Netlify, add your environment variables for you `profiles.yml`
+	1. Finish by selecting `Deploy site` (this will work, but we're not quite there yet)
+1. Add your environment variables for your `profiles.yml`
 
 
