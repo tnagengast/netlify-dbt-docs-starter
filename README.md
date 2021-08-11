@@ -3,9 +3,9 @@
 ## dbt Setup
 1. Create a dbt project
 1. Push your dbt project to a GitHub repo
-1. Add `reqirements.txt` with your dbt version
-1. Add `profiles/profiles.yml`
-1. Add `netlify.toml` file that Netlify will use to build the docs
+1. Add [`reqirements.txt`](https://github.com/tnagengast/netlify-dbt-docs-starter/pull/1/files#diff-4d7c51b1efe9043e44439a949dfd92e5827321b34082903477fd04876edb7552) with your dbt version
+1. Add [`profiles/profiles.yml`](https://github.com/tnagengast/netlify-dbt-docs-starter/pull/1/files#diff-0b6234791dc6ccbcc7864adcd31fe50d322290fd76217b6673fb4b8f7ccf8337)
+1. Add [`netlify.toml`](https://github.com/tnagengast/netlify-dbt-docs-starter/pull/1/files#diff-ab8f79b68b7adff7a07db953bf453f3c5aa6ade98d2b1b67d8432b36392489ed) file that Netlify will use to build the docs
 
 ## Netlify Setup
 1. Create a Netlify account
