@@ -1,0 +1,14 @@
+default:
+  target: "{{ env_var('DBT_PROFILE_TARGET', 'test') }}"
+
+  outputs:
+    test: # Default
+      type: snowflake
+      account: "{{ env_var('DBT_PROFILE_ACCOUNT') }}"
+      user: "{{ env_var('DBT_PROFILE_USER') }}"
+      password: "{{ env_var('DBT_PROFILE_PASSWORD') }}"
+      role: "{{ env_var('DBT_PROFILE_ROLE') }}"
+      database: "{{ env_var('DBT_PROFILE_DATABASE') }}"
+      warehouse: "{{ env_var('DBT_PROFILE_WAREHOUSE') }}"
+      schema: "{{ env_var('DBT_PROFILE_SCHEMA') }}"
+      threads: 32
