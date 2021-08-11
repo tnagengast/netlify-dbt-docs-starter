@@ -1,0 +1,6 @@
+[build]
+    publish = "target"
+    command = "dbt docs generate --profiles-dir profiles"
+
+[build.environment]
+    PYTHON_VERSION = "3.7"
