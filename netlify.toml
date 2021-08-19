@@ -1,7 +1,13 @@
 [build]
     publish = "target"
-    command = "dbt docs generate --profiles-dir profiles"
+    command = "dbt docs generate --profiles-dir profiles && cp -a docs/. target/."
     functions = "docs/functions"
 
 [build.environment]
     PYTHON_VERSION = "3.7"
+
+[[redirects]]
+    from = "/*"
+    to = "/auth.html"
+    status = 401
+    force = true
