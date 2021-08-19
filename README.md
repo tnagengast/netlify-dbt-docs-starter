@@ -26,9 +26,12 @@
 
 ## Connect CLI
 1. Download the Netlify CLI
+1. Login
 1. Run `netlify link` to link you local development to your site
 
 
 ## Adding authentication
 1. Add `docs/functions/auth.js`
-1. Add `package.json` and install with `npm install`
+1. ~~Add `package.json` and install with `npm install`~~
+1. Update webhook in the netlify
+    1. Generate secret with `uuidgen`

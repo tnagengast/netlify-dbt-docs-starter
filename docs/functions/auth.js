@@ -1,6 +1,7 @@
 const jws = require("jws");
 
 exports.handler = async function(event) {
+	console.log('Authenticating...')
 	if ("WEBHOOK_SECRET" in process.env) {
 		const signature = event.headers["x-webhook-signature"];
 		if (!jws.verify(signature, "HS256", process.env.WEBHOOK_SECRET)) {
