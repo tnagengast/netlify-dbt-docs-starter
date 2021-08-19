@@ -1,0 +1,7 @@
+{
+    "name": "netlify-dbt-docs-starter",
+    "version": "0.0.1",
+    "dependencies": {
+      "jws": "^4.0.0"
+    }
+  }

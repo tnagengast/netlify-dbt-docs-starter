@@ -22,3 +22,16 @@
 ![CleanShot 2021-08-11 at 09 48 03](https://user-images.githubusercontent.com/260337/129074981-e05b79ef-9f7c-4007-831d-49d567f4c8e5.png)
 1. Now you can deploy your docs by going to the `Deploys` section and hitting `Trigger deploy` -> `Deploy site`
 ![CleanShot 2021-08-11 at 09 51 57](https://user-images.githubusercontent.com/260337/129074231-b62296f4-2ed8-4e28-bf8e-eb31485ffe25.png)
+
+
+## Connect CLI
+1. Download the Netlify CLI
+1. Login
+1. Run `netlify link` to link you local development to your site
+
+
+## Adding authentication
+1. Add `docs/functions/auth.js`
+1. ~~Add `package.json` and install with `npm install`~~
+1. Update webhook in the netlify
+    1. Generate secret with `uuidgen`
